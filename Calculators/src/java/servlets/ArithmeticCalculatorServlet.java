@@ -23,7 +23,7 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
      * @throws IOException 
      */
     
-    @Overrride
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setAttribute("otherpage", "/CPRG352_Lab03/age");
         getServletContext().getRequestDispatcher("/WEB-INF/arhimeticcalculator.jsp").forward(request, response);
